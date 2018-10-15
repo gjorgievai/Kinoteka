@@ -1,0 +1,60 @@
+.title{
+    text-align: center;
+}
+.form-edit{
+    width: 400px;
+    margin: 0 auto;
+}
+#picture{
+    margin-top: 10px;
+}
+
+.btn-info{
+    float: left;
+    margin-right: 10px;
+}
+.movie-search{
+    width: 200px;
+    float: left;
+}
+.glyphicon-search{
+    float: left;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.movie-list{
+    float: right;
+
+}
+.table{
+    width: 350px;
+
+}
+.form-edit1{
+    width: 400px;
+    margin: 0 auto;
+}
+.photo{
+    float: left;
+    width: 300px;
+    margin-right: 10px;
+}
+.table{
+    width: 400px;
+}
+.jury-list {
+    float: right;
+}
+.btn-list-award{
+    float: right;
+}
+.role{
+    width: 150px;
+    float: left;
+    margin-right: 40px;
+}
+.jury-name{
+    float: left;
+    width: 150px;
+}

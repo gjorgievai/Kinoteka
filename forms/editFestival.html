@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new Festival</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/create-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h2 class="title">Edit festival</h2>
+<hr>
+<form class="create-form">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control">
+        <label>About</label>
+        <textarea cols="5" rows="4" class="form-control"></textarea>
+        <label id="year-name">Year</label>
+        <input type="number" class="form-control" id="years">
+        <select id="season" class="form-control">
+            <option>Spring</option>
+            <option>Summer</option>
+            <option>Autumn</option>
+            <option>Winter</option>
+        </select>
+        <br>
+        <br>
+    </div>
+    <div class="form-group date-from">
+        <label>From</label>
+        <input type="date" class="form-control">
+    </div>
+    <div class="form-group date-from">
+        <label>To</label>
+        <input type="date" class="form-control">
+    </div>
+    <div class="form-group">
+        <select class="programs form-control">
+            <option>Documentary</option>
+            <option>Feature</option>
+            <option>Animation</option>
+            <option>Short</option>
+        </select>
+        <button class="btn btn-info">+</button>
+    </div>
+    <div class="form-group">
+        <table class="table">
+            <tr>
+                <td>Feature <button class=" programs-list btn btn-danger">X</button><button class="programs-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class="programs-list btn btn-default glyphicon glyphicon-triangle-top"></button></td>
+            </tr>
+            <tr>
+                <td>Documentary <button class=" programs-list btn btn-danger">X</button><button class="programs-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class="programs-list btn btn-default glyphicon glyphicon-triangle-top"></button></td>
+            </tr>
+            <tr>
+                <td>Animation <button class=" programs-list btn btn-danger">X</button><button class="programs-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class="programs-list btn btn-default glyphicon glyphicon-triangle-top"></button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group">
+        <input type="file" onchange="readUrl(this);" class="form-control">
+        <img src="#" id="picture">
+    </div>
+    <hr>
+    <div class="form-group">
+        <button class="btn btn-success">Save</button>
+        <button class="btn btn-default">Cancel</button>
+    </div>
+</form>
+</body>
+<script>
+    function readUrl(input) {
+        if(input.files && input.files[0])
+        {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $("#picture").attr('src',e.target.result)
+
+            }
+            reader.readAsDataURL(input.files[0]);
+
+        }
+
+    }
+</script>
+</html>

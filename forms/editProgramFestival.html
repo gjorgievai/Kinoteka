@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit program festival</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/edit-festival.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h2 class="title">Edit programme festival</h2>
+    <hr>
+    <div class="row">
+    <div class="col-lg-6">
+    <form class="form-edit">
+        <div class="form-group">
+            <label>Program name</label>
+            <h3 id="program-name">Feature</h3>
+        </div>
+        <div class="form-group">
+            <label>Festival</label>
+            <h3 id="festival-name">Autumn 2018</h3>
+        </div>
+        <div class="form-group">
+            <input type="file" onchange="readUrl(this);" class="form-control">
+            <img src="#" id="picture">
+
+        </div>
+        <div class="form-group">
+            <label>Movies</label>
+        </div>
+        <div class="form-group">
+            <input type="search" class="form-control movie-search"><span class="glyphicon glyphicon-search"></span>
+            <button class="btn btn-info">+</button><br><br>
+        </div>
+        <div class="form-group">
+            <table class="table">
+                <tr>
+                    <td>Movie 1<button class="movie-list btn btn-danger">X</button><button class="movie-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class="movie-list btn btn-default glyphicon glyphicon-triangle-top"></button></td>
+                </tr>
+                <tr>
+                    <td>Movie 2  <button class=" movie-list btn btn-danger">X</button><button class="movie-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class="movie-list btn btn-default glyphicon glyphicon-triangle-top"></button></td>
+                </tr>
+                <tr>
+                    <td>Movie 3<button class=" movie-list btn btn-danger">X</button><button class="movie-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class="movie-list btn btn-default glyphicon glyphicon-triangle-top"></button></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    </div>
+        <div class="col-lg-6">
+            <form class="form-edit1">
+                <div class="form-group role">
+                    <label>Jury role</label>
+                    <select class="form-control">
+                        <option>Main jury</option>
+                        <option>Sec. jury</option>
+                    </select>
+                </div>
+                <div class="form-group jury-name">
+                    <label>Jury name</label>
+                    <input type="text" id="jury-name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="file" class="form-control photo" placeholder="Upload photo"> <button class="btn btn-info">+</button>
+                </div>
+                <div class="form-group">
+                    <label>Biography</label>
+                    <textarea class="form-control" cols="4" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <table class="table">
+                        <tr>
+                            <td>Main jury</td>
+                            <td>Person 1</td>
+                            <td>Short biog..<button class=" jury-list btn btn-danger">X</button><button class=" jury-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class=" jury-list  btn btn-default glyphicon glyphicon-triangle-top"></button><button class=" jury-list  btn btn-default glyphicon glyphicon-pencil "></button></td>
+                        </tr>
+                        <tr>
+                            <td>Sec. jury</td>
+                            <td>Person 2</td>
+                            <td>Short biog..<button class=" jury-list btn btn-danger">X</button><button class=" jury-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class=" jury-list  btn btn-default glyphicon glyphicon-triangle-top"></button><button class=" jury-list  btn btn-default glyphicon glyphicon-pencil "></button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form-group">
+                    <label>Award</label>
+                    <select class="form-control">
+                        <option>Best photography</option>
+                        <option>Best female actor</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label>Award</label>
+                    <select class="form-control">
+                        <option>Movie 1</option>
+                        <option>Movie 2 </option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <table class="table">
+                        <tr>
+                            <td>Best photography</td>
+                            <td>Movie 1 <button class="btn-list-award btn btn-danger">X</button></td>
+                        </tr>
+                        <tr>
+                            <td>Best female actor</td>
+                            <td>Movie 2 <button class="btn-list-award btn btn-danger">X</button></td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+<script>
+    function readUrl(input) {
+        if(input.files && input.files[0])
+        {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $("#picture").attr('src',e.target.result).width("150px").height("150px");
+
+            }
+            reader.readAsDataURL(input.files[0]);
+
+        }
+
+    }
+</script>
+</html>
