@@ -1,0 +1,42 @@
+.create-form{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#years{
+    width: 100px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#season{
+    width: 130px;
+    float: left;
+    margin-top: 10px;
+}
+#year-name{
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.date-from{
+    width: 190px;
+    float: left;
+    margin-right: 10px;
+
+}
+.programs{
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+}
+btn-info{
+    float: left;
+}
+.programs-list{
+    float: right;
+}
+#picture{
+    width: 150px;
+    height: 150px;
+}

@@ -1,0 +1,34 @@
+.search-form{
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.glyphicon-search{
+
+    font-size: 22px;
+    color: #1b6d85;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+
+
+
+}
+.festivals{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 20px;
+
+}
+.remove-festival{
+    float: right;
+}
+.thead-table{
+    background-color: black;
+    color: white;
+}
+
