@@ -10,47 +10,67 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h2 class="title">Edit programme festival</h2>
-    <hr>
+<h2 class="title">Edit programme festival</h2>
+<hr>
+<div class="menu">
+    <div class="button-menu btn btn-default">Programs</div>
+    <div class="button-menu btn btn-default">Awards</div>
+    <div class="button-menu btn btn-default">Other</div>
+</div>
+<div class="container">
     <div class="row">
-    <div class="col-lg-6">
-    <form class="form-edit">
-        <div class="form-group">
-            <label>Program name</label>
-            <h3 id="program-name">Feature</h3>
-        </div>
-        <div class="form-group">
-            <label>Festival</label>
-            <h3 id="festival-name">Autumn 2018</h3>
-        </div>
-        <div class="form-group">
-            <input type="file" onchange="readUrl(this);" class="form-control">
-            <img src="#" id="picture">
+        <div class="col-lg-5">
+            <form class="form-edit">
+                <div class="form-group">
+                    <label>Program name</label>
+                    <h3 id="program-name">Feature</h3>
+                </div>
+                <div class="form-group">
+                    <label>Festival</label>
+                    <h3 id="festival-name">Autumn 2018</h3>
+                </div>
+                <div class="form-group">
+                    <input type="file" onchange="readUrl(this);" class="form-control">
+                    <img src="#" id="picture">
 
+                </div>
+                <div class="form-group">
+                    <label>Movies</label>
+                </div>
+                <div class="form-group">
+                    <input type="search" class="form-control movie-search"><span
+                        class="glyphicon glyphicon-search"></span>
+                    <button class="btn btn-info">+</button>
+                    <br><br>
+                </div>
+                <div class="form-group">
+                    <table class="table">
+                        <tr>
+                            <td>Movie 1
+                                <button class="movie-list btn btn-danger">X</button>
+                                <button class="movie-list btn btn-default glyphicon glyphicon-triangle-bottom"></button>
+                                <button class="movie-list btn btn-default glyphicon glyphicon-triangle-top"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Movie 2
+                                <button class=" movie-list btn btn-danger">X</button>
+                                <button class="movie-list btn btn-default glyphicon glyphicon-triangle-bottom"></button>
+                                <button class="movie-list btn btn-default glyphicon glyphicon-triangle-top"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Movie 3
+                                <button class=" movie-list btn btn-danger">X</button>
+                                <button class="movie-list btn btn-default glyphicon glyphicon-triangle-bottom"></button>
+                                <button class="movie-list btn btn-default glyphicon glyphicon-triangle-top"></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
         </div>
-        <div class="form-group">
-            <label>Movies</label>
-        </div>
-        <div class="form-group">
-            <input type="search" class="form-control movie-search"><span class="glyphicon glyphicon-search"></span>
-            <button class="btn btn-info">+</button><br><br>
-        </div>
-        <div class="form-group">
-            <table class="table">
-                <tr>
-                    <td>Movie 1<button class="movie-list btn btn-danger">X</button><button class="movie-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class="movie-list btn btn-default glyphicon glyphicon-triangle-top"></button></td>
-                </tr>
-                <tr>
-                    <td>Movie 2  <button class=" movie-list btn btn-danger">X</button><button class="movie-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class="movie-list btn btn-default glyphicon glyphicon-triangle-top"></button></td>
-                </tr>
-                <tr>
-                    <td>Movie 3<button class=" movie-list btn btn-danger">X</button><button class="movie-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class="movie-list btn btn-default glyphicon glyphicon-triangle-top"></button></td>
-                </tr>
-            </table>
-        </div>
-    </form>
-    </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5">
             <form class="form-edit1">
                 <div class="form-group role">
                     <label>Jury role</label>
@@ -64,7 +84,8 @@
                     <input type="text" id="jury-name" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="file" class="form-control photo" placeholder="Upload photo"> <button class="btn btn-info">+</button>
+                    <input type="file" class="form-control photo" placeholder="Upload photo">
+                    <button class="btn btn-info">+</button>
                 </div>
                 <div class="form-group">
                     <label>Biography</label>
@@ -75,17 +96,27 @@
                         <tr>
                             <td>Main jury</td>
                             <td>Person 1</td>
-                            <td>Short biog..<button class=" jury-list btn btn-danger">X</button><button class=" jury-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class=" jury-list  btn btn-default glyphicon glyphicon-triangle-top"></button><button class=" jury-list  btn btn-default glyphicon glyphicon-pencil "></button></td>
+                            <td>Short biog..
+                                <button class=" jury-list btn btn-danger">X</button>
+                                <button class=" jury-list btn btn-default glyphicon glyphicon-triangle-bottom"></button>
+                                <button class=" jury-list  btn btn-default glyphicon glyphicon-triangle-top"></button>
+                                <button class=" jury-list  btn btn-default glyphicon glyphicon-pencil "></button>
+                            </td>
                         </tr>
                         <tr>
                             <td>Sec. jury</td>
                             <td>Person 2</td>
-                            <td>Short biog..<button class=" jury-list btn btn-danger">X</button><button class=" jury-list btn btn-default glyphicon glyphicon-triangle-bottom"></button><button class=" jury-list  btn btn-default glyphicon glyphicon-triangle-top"></button><button class=" jury-list  btn btn-default glyphicon glyphicon-pencil "></button></td>
+                            <td>Short biog..
+                                <button class=" jury-list btn btn-danger">X</button>
+                                <button class=" jury-list btn btn-default glyphicon glyphicon-triangle-bottom"></button>
+                                <button class=" jury-list  btn btn-default glyphicon glyphicon-triangle-top"></button>
+                                <button class=" jury-list  btn btn-default glyphicon glyphicon-pencil "></button>
+                            </td>
                         </tr>
                     </table>
                 </div>
                 <div class="form-group">
-                    <label>Award</label>
+                    <label>Awards</label>
                     <select class="form-control">
                         <option>Best photography</option>
                         <option>Best female actor</option>
@@ -93,10 +124,10 @@
 
                 </div>
                 <div class="form-group">
-                    <label>Award</label>
+                    <label>Movies</label>
                     <select class="form-control">
                         <option>Movie 1</option>
-                        <option>Movie 2 </option>
+                        <option>Movie 2</option>
                     </select>
 
                 </div>
@@ -104,11 +135,15 @@
                     <table class="table">
                         <tr>
                             <td>Best photography</td>
-                            <td>Movie 1 <button class="btn-list-award btn btn-danger">X</button></td>
+                            <td>Movie 1
+                                <button class="btn-list-award btn btn-danger">X</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>Best female actor</td>
-                            <td>Movie 2 <button class="btn-list-award btn btn-danger">X</button></td>
+                            <td>Movie 2
+                                <button class="btn-list-award btn btn-danger">X</button>
+                            </td>
                         </tr>
 
                     </table>
@@ -116,16 +151,23 @@
 
             </form>
         </div>
+
     </div>
+    <hr>
+
+</div>
+
+<div class="save-cancel-buttons">
+    <button class="btn btn-lg btn-success">Save</button> <button class="btn btn-lg btn-default">Cancel</button>
+</div>
 
 </body>
 <script>
     function readUrl(input) {
-        if(input.files && input.files[0])
-        {
+        if (input.files && input.files[0]) {
             var reader = new FileReader();
             reader.onload = function (e) {
-                $("#picture").attr('src',e.target.result).width("150px").height("150px");
+                $("#picture").attr('src', e.target.result).width("150px").height("150px");
 
             }
             reader.readAsDataURL(input.files[0]);

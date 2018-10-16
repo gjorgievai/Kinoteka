@@ -43,3 +43,31 @@ btn-info{
 .title{
     text-align: center;
 }
+.programs-list{
+    margin-right: 10px;
+}
+.save-cancel-buttons{
+    position: absolute;
+    text-align: center;
+    bottom:0;
+    margin-left: 250px;
+
+}
+.menu
+{
+    left: 0;
+    top:0;
+    margin-left: 20px;
+}
+.button-menu{
+    background-color: gainsboro;
+    width: 200px;
+    border: 1px solid black;
+    clear: both;
+    float: left;
+}
+.container{
+    margin-left: 200px;
+    position: absolute;
+    margin-top: -10px;
+}

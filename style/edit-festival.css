@@ -8,7 +8,12 @@
 #picture{
     margin-top: 10px;
 }
-
+.programs-list{
+    margin-right: 10px;
+}
+.jury-list{
+    margin-right: 3px;
+}
 .btn-info{
     float: left;
     margin-right: 10px;
@@ -40,6 +45,9 @@
     width: 300px;
     margin-right: 10px;
 }
+.movie-list{
+    margin-right: 3px;
+}
 .table{
     width: 400px;
 }
@@ -57,4 +65,30 @@
 .jury-name{
     float: left;
     width: 150px;
+}
+
+.save-cancel-buttons{
+    position: absolute;
+    text-align: center;
+    bottom:0;
+    margin-left: 250px;
+    padding-top: 20px;
+}
+.menu
+{
+    left: 0;
+    top:0;
+    margin-left: 20px;
+}
+.button-menu{
+    background-color: gainsboro;
+    width: 200px;
+    border: 1px solid black;
+    clear: both;
+    float: left;
+}
+.container{
+    margin-left: 200px;
+    position: absolute;
+    margin-top: -10px;
 }
